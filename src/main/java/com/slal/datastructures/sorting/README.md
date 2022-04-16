@@ -14,3 +14,10 @@ iii.  If not do nothing
 2. Complexity is O(n2) if reversed
 3. This is an in memory sorting algorithm
 
+## Selection Sort
+1. Selection sort maintains two arrays for sorting (original and sorted)
+2. It repeats the following steps:
+i. From original, start beginning (min_dex)
+ii. then find the next smallest element in original.
+If you find smallest element set to min_dex
+iii.  Swap the element with found element

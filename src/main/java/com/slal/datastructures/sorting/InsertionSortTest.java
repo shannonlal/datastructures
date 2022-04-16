@@ -30,7 +30,6 @@ public class InsertionSortTest {
         int[] rst = sorter.sort(simpleArray);
 
         assertEquals( simpleArray, rst);
-        //assertEquals( "Regular multiplication should work", calculator.multiply(4,5), 20);
     }
 
 }
