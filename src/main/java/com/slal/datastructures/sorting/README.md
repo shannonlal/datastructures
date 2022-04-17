@@ -21,3 +21,8 @@ i. From original, start beginning (min_dex)
 ii. then find the next smallest element in original.
 If you find smallest element set to min_dex
 iii.  Swap the element with found element
+
+## Todo
+Bubble Sort
+Merge Sort
+Quick Sort
