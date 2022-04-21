@@ -1,14 +1,9 @@
 package com.slal.datastructures.algorithms;
 
-import com.slal.datastructures.sorting.BubbleSort;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.HashMap;
 import java.util.Map;
-
 import static org.junit.Assert.assertNotNull;
-
 
 public class StableMatchingTest {
     private StableMatching algorithm;

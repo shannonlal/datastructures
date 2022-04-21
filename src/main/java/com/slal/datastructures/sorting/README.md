@@ -23,11 +23,11 @@ If you find smallest element set to min_dex
 iii.  Swap the element with found element
 
 
-## Bubbler Sort
+## Bubble Sort
 1. Start of at the start of the array and work down
 2. For each element compare to the next element.  If current element is bigger swap else 
 do nothing
+
 ## Todo
-Bubble Sort
 Merge Sort
 Quick Sort
