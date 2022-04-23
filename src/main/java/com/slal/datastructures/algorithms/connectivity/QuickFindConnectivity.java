@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  * -- All the non-connected values
  *
  * Example:
- * -- Inputs: [1,2], [2,4], [3,5], [5,6]
+ * -- Inputs: [1,2], [2,4], [3,5], [5,6], [1,4]
  *
  * -- Outputs: [1,5],[1,3], [1,6],[2,5],[2,3],[4,5],[4,3],[4,6]
  *
@@ -84,6 +84,7 @@ public class QuickFindConnectivity {
     /**
      * This function will get the set of pair A and find all the pairs that correspond to the
      * set of Pair B and swap them to set A
+     * // This is union
      * @param pairA
      * @param pairB
      */
@@ -91,15 +92,13 @@ public class QuickFindConnectivity {
         Integer setA = this.pairs.get( pairA );
         Integer setB = this.pairs.get( pairB );
 
+        //Quick Union and Quick Find
+        // Quick Find is n for union and O(1) for find
+
         this.pairs.entrySet().stream().filter(entry -> entry.getValue() == setB).forEach((k) -> {
             System.out.println("Key"+k.getKey()+" Val"+ k.getValue());
             k.setValue(( setA));
         });
-
-        //System.out.println(s.count());
-        //s.
-
-                //.filter(entry -> entry.getValue() == pairB).forEach( entry -> entry.setValue( pairA));
 
     }
 
