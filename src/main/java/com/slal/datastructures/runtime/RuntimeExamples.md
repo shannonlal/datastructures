@@ -27,6 +27,7 @@ This will have a runtime of N same as above
 
 There for runtime is:
 
+
 Runtime: Outer Loop Runtime * Inner Loop Runtime
 
 Runtime = (N)*(N) = (N<sup>2</sup>)
@@ -84,6 +85,8 @@ the number of operations will be
 Which follows the arithmetic sum:
 which is N/2
 
+Note: you can't analyze the inner separately as it is dependent on the outloop
+
 There for runtime is:
 
 Runtime: Outer Loop Runtime * Inner Loop Runtime
@@ -136,9 +139,8 @@ for( int k=0; k< n; k++)
 
 Runtime =  Loop 1 + Loop 2
 
-**Runtime** = N + N = 2N or can say N
+**Runtime** = N + N = 2N
 
-**Runtime** = N*N/2 = (N<sup>2</sup>)/2
 
 ## Example 7:
 
@@ -152,9 +154,27 @@ for( int i=0; i< n^2; i++){
 
 Runtime =  Outer Loop * Inner Loop
 
-**Outloop Runtime** = N<sup>2</sup>
+Note: This is arithmetic mean and can't use Outer and Inner Loop
 
-**Inner Runtime** = (N<sup>2</sup>)/2
+let N = n^2
 
-**Runtime** = (N<sup>2</sup>)*(N<sup>2</sup>)/2
-            = (N<sup>4</sup>)/2
+```java
+for( int i=0; i< N; i++){
+    for( int j=0; j < i; j++){
+        s.o.p(i);
+    }
+}
+```
+
+Outloop is = N
+Inner loop is i
+
+Runtime is N*i
+
+i = 0,1, 2, 3, ....N
+
+
+
+**Runtime** = (N<sup>2</sup>)/2
+
+            = (n<sup>4</sup>)/2
