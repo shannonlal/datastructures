@@ -16,16 +16,24 @@ package com.slal.datastructures.algorithms.recursion;
  */
 public class PrintNumbers {
 
-    public void print( int[] list, int currentIndex ){
+    public void printReverse( int[] list, int currentIndex ){
 
-        if( currentIndex == (list.length - 1) ){
+        if( currentIndex != (list.length) ){
+            printReverse(list, currentIndex+1);
             System.out.println( list[currentIndex ]);
             return;
         }
-        else {
-            print(list, currentIndex++);
+        return;
+    }
+
+    public void printInorder( int[] list, int currentIndex ){
+
+        if( currentIndex != (list.length) ){
+            System.out.println( list[currentIndex ]);
+            printInorder(list, currentIndex+1);
             return;
         }
+        return;
     }
 
     public static void main(String[] args){
@@ -33,7 +41,8 @@ public class PrintNumbers {
         PrintNumbers tmp = new PrintNumbers();
         int[] l = {1,4,2,5,6,8,1,1};
 
-        tmp.print(l,0);
+        tmp.printReverse(l,0);
+        tmp.printInorder(l, 0);
     }
 
 }
