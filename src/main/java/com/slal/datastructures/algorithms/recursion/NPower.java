@@ -8,6 +8,6 @@ public class NPower {
     public int power( int base, int n){
         if( n == 1) return base;
 
-        return power( base, n-1);
+        return power( base, n-1)*base;
     }
 }

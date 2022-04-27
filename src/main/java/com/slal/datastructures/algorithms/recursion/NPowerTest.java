@@ -22,28 +22,28 @@ public class NPowerTest {
     public void testSinglePower(){
         int result = power.power(3,1);
 
-        assertEquals(3,3 );
+        assertEquals(3,result );
     }
 
     @Test
     public void testSquredPower(){
         int result = power.power(3,2);
 
-        assertEquals(9,9 );
+        assertEquals(9,result );
     }
 
     @Test
     public void testCubedPower(){
         int result = power.power(5,3);
 
-        assertEquals(125,125 );
+        assertEquals(125,result );
     }
 
     @Test
     public void testOneBase(){
         int result = power.power(1,100);
 
-        assertEquals(1,1 );
+        assertEquals(1,result );
     }
 
 }
