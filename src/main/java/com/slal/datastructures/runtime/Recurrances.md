@@ -60,5 +60,65 @@ Worst Case: T(n); O(n)
 
 ## Example 1: Complexity is O(n)
 
+# Example 2
+
+Given:
+```java
+T(n) = T(n-1)+ n
+T(0) = 1;
+```
+
+## Example 2: Solve
+
+n -1
+```java
+T(n-1) = T(n-2)+ n-1
+```
+
+n -2
+```java
+T(n-2) = T(n-3)+ n-2
+```
+n -3
+```java
+T(n-3) = T(n-4)+ n-3
+```
+## Example 2: Replacement
+
+```java
+T(n) = T(n-1) + n
+
+T(n) = T(n-2)+ n-1 + n
+
+T(n) = T(n-2) + 2n -1
+
+T(n) = (T(n-3)+ n-2) + 2n -1
+
+T(n) = T(n-3) + 3n -3
+T(n) = T(n-i) + i(n-1)
+
+T(0) = 1
+T(n-i) = 1; n=i
+
+T(n) = T(n-n) + n(n-1)
+T(n) = T(0) + n(n-1)
+T(n) = 1+ n(n-1)
+```
+
+T(n) = 1 if n=0
+     = T(n-i) + i(n-1) if n > 0
+     
+## Example 2: Complexity
+
+Best Case: n=i; T(0) = 1 -- O(1)
+
+Worst Case; n^2; O(n^2)
+
+Need to review
+     
+     
+
+
+
 
 
