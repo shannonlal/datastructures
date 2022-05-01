@@ -128,3 +128,10 @@ ii. Have to go through every item on find smallest
 iii. NO SWAPS made
 
 Complexity is the still (N<sup>2</sup>)/2 but still operations will vary.
+
+Need to add in comparason and exhange in ops
+
+
+## Need to do
+1. Insertion Sort
+2. Bubble Sort
