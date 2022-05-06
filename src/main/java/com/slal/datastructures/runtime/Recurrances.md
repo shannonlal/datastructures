@@ -2,6 +2,7 @@ The following are some summary notes from recurrances
 
 # Example 1
 
+Note: Don't do N-1; what you are lookingfor is T(N/2)
 Given:
 ```java
 T(n) = 2T(n/2)+1;
@@ -62,6 +63,9 @@ Worst Case: T(n); O(n)
 
 # Example 2
 
+NOTE: Revisit.  Arethmatic Sum
+
+
 Given:
 ```java
 T(n) = T(n-1)+ n
@@ -103,6 +107,8 @@ T(n-i) = 1; n=i
 T(n) = T(n-n) + n(n-1)
 T(n) = T(0) + n(n-1)
 T(n) = 1+ n(n-1)
+
+
 ```
 
 T(n) = 1 if n=0
