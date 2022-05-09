@@ -44,3 +44,37 @@ input 1
 ## Interation 3b:
 piv_index: 0, 2
 new_arr = [2]
+
+
+
+### Code
+
+### Base case
+
+If( length of 1) = stop
+
+If ( length of array is <= 2)
+-- Find pivot 
+-- Find all elements to left of pivot
+-- Find all elements to the right of pivot
+
+-- Copy all remaining elements to list
+-- Copy elements into to original
+
+-- sortMerge( arr, start, (start+end)/2)
+-- sortMerge( arr, (start+end)/2+1, end)
+
+public void quickSort( int[] arr, int start, int end){    
+    if( start < end){
+        int pivot = arr[start];
+        
+        int pivot_index = split( arr, start, pivot, end);
+        
+        quickSort( arr, start, pivot_index-1);
+        quickSort( arr, pivot_index+1, end);
+    }
+}
+
+public void split( int[] arr, int start, int end){
+
+}
