@@ -72,3 +72,63 @@ Pass Five:1,4,2,0, 2,7,5,9
 
 
 
+# Pivot Process
+1. Pick a number
+2. Put all the numbers to left of the pivot to 
+3. Put all the numbers in the right of the pivot
+4. Split array and repeat at pivot and repeat
+
+
+# Questions:
+1. What is the impact of picking first number in the array vs in the middle.  When I look at other algorithms they pick the pivot 
+at the middle
+
+2. Is this a top down merge sort?
+3. How will bottom up merge sort work?
+4. How is the merging of the arrays working from the split
+5. Can we walk through the psuedo code
+
+# Example to work through
+Input: 1,4,3,7,9,0,2,5
+
+Step 1: Pick 1 as start, pivot_index = 1
+
+## Split Process:
+ int new_arr
+ ## Check if k is less than pivot
+ new_arr[0] = 0
+ 
+ int pivot_index = k+1; 1
+ new_array[pivot_index] = pivot (1)
+ ## Check if k is greater than pivot
+ new_arr[2] = 4,3,7,9,2,5
+ 
+
+## Repeat Sorting but split into 2 arrays:
+pivot_index = 1
+
+Split 1: [1]
+Split 2: [4,3,7,9,0,2,5]
+
+Split 1: Stops at 1
+
+Split 2: 
+    Pivot: 4, index in array2
+    ## Check if smaller
+    new_arr[2] = 3,0,2
+    
+    Array
+    new_arr[3] = 3,0,2,4
+    ## Check if bigger than 4
+    new_arr[4] = 3,0,2,4,7,9,5
+    
+    Return Pivot is index is 4
+    
+Split 3:
+    First Split: [4,3,7,9]
+    
+    Second Split: [0,2,5]
+ 
+
+
+
